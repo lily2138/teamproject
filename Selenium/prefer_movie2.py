@@ -57,13 +57,13 @@ def prefer_algorithm():
             for movie_genre in all_main_genre:
                 #선택한 영화 메인 장르 값과 메인장르 배열의 값이 같으면
                 if comparison_movie_1_main_genre == all_main_genre[movie_genre]:
-                    # 선택된 영화의 메인장르 값에 + 2 점(이거 코드가 맞는지 모르겠오)
+                    # 선택된 영화의 장르 값에 + 2 점(이거 코드가 맞는지 모르겠오)
                     genre_score[movie_genre].update(genre_score=+2)
             # 서브장르 배열을 돌리고,
             for movie_genre in all_second_genre:
                 # 선택한 영화 서브 장르 값과 서브장르 배열의 값이 같으면
                 if comparison_movie_1_main_genre == all_second_genre[movie_genre]:
-                    # 선택된 영화의 메인장르 값에 + 1 점(이거 코드가 맞는지 모르겠오)
+                    # 선택된 영화의 장르 값에 + 1 점(이거 코드가 맞는지 모르겠오)
                     genre_score[movie_genre].update(genre_score=+1)
 
         # 만약 사용자가 comaprison_movie_2 을 고른다면,
