@@ -67,29 +67,29 @@ for i in range(15):
     # 고객 선택이 1번 영화면,
     if customer_choice == comparison_movie_1 :
         for key in genre_score:
-            main_score = comparison_movie_1_main_genre.split('\n')[1]
-            second_score = comparison_movie_1_second_genre.split('\n')[1]
+            selected_main_genre = comparison_movie_1_main_genre.split('\n')[1]
+            selected_second_genre = comparison_movie_1_second_genre.split('\n')[1]
             #print(key)
             #print(main_score)
             #print(second_score)
-            if main_score  == key:
+            if selected_main_genre  == key:
                 genre_score[key] = genre_score[key] + 2
 
-            if second_score == key:
+            if selected_second_genre == key:
                 genre_score[key] = genre_score[key] + 1
 
     # 고객 선택이 2번 영화면,
     elif customer_choice == comparison_movie_2 :
         for key in genre_score:
-            main_score = comparison_movie_2_main_genre.split('\n')[1]
-            second_score = comparison_movie_2_second_genre.split('\n')[1]
+            selected_main_genre = comparison_movie_2_main_genre.split('\n')[1]
+            selected_second_genre = comparison_movie_2_second_genre.split('\n')[1]
             # print(key)
             # print(main_score)
             # print(second_score)
-            if main_score == key:
+            if selected_main_genre == key:
                 genre_score[key] = genre_score[key] + 2
 
-            if second_score == key:
+            if selected_second_genre == key:
                 genre_score[key] = genre_score[key] + 1
 
     print(genre_score)
