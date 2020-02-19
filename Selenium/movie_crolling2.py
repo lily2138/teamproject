@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from pymongo import MongoClient  # pymongo를 임포트 하기(패키지 인스톨 먼저 해야겠죠?)
 
 client = MongoClient('localhost', 27017)  # mongoDB는 27017 포트로 돌아갑니다.
-db = client.Long_Movie_Platform  # 'Long_Movie_Platform' 이라는 이름의 db를 만듭니다.
+db = client.Short_Movie_Platform  # 'Short_Movie_Platform' 이라는 이름의 db를 만듭니다.
 
 driver = webdriver.Chrome('./chromedriver')
 url = 'https://movie.naver.com/movie/sdb/rank/rmovie.nhn?sel=pnt&date=20200213&tg='
@@ -27,7 +27,7 @@ for i in range(19):
     # 랭킹페이지 접근
     driver.get(url + str(i + 1))
 
-    for j in range(4):
+    for j in range(10):
         # xpath 를 사용하여, 1위로 찍힌 영화명을 클릭 (클릭해야 영화정보가 있는 사이트로 넘어갈 수 있음)
         driver.find_element_by_xpath("//*[@id='old_content']/table/tbody/tr[" + str(j + 2) + "]/td[2]/div/a").click()
 

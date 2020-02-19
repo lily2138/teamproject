@@ -8,11 +8,22 @@ client = MongoClient('localhost', 27017)
 db = client.Short_Movie_Platform
 # all_long_movie 라는 변수에 DB값 담기
 all_long_movie = list(db.Long_movie_1.find())
+#print(all_long_movie)
 # all_main_genre 라는 변수에 main_genre DB값 담기(이것도 코드가 맞는지 모르겠오)
-all_main_genre = list(db.Long_movie_1.find(['main_genre']))
-# all_second_genre 라는 변수에 second_genre DB값 담기
-all_second_genre = list(db.Long_movie_1.find(['second_genre']))
+#all_main_genre = db.Long_movie_1.values('main_genre')
+#all_main_genre = list(db.Long_movie_1.find({['main_genre']}))
+all_main_genre = list(db.Long_movie_1.values.find({'_id': 0, 'title' : 0, 'poster' : 0,
+                         'director' : 0,'actor' : 0,'summary' : 0,
+                         'main_genre' : 1,'second_genre': 0}))
 
+
+print(all_main_genre)
+# all_second_genre 라는 변수에 second_genre DB값 담기
+#all_second_genre = list(db.Long_movie_1.find(['second_genre']))
+
+
+for v in all_long_movie:
+    print("main_genre:",v)
 
 # 장르마다 점수 값 배정
 genre_score = {
@@ -50,7 +61,8 @@ def prefer_algorithm():
         print(comparison_movie_1)
         print(comparison_movie_2)
         # 만약 사용자가 comaprison_movie_1 을 고른다면, (★) 고른 image 의 값을 'customer_choice' 대신에 넣어야함 (이 부분은 프론트엔드 할 때 수정해야함)
-        if customer_choice == comparison_movie_1:
+        customer_choice = '<1장르> 드라마'
+        if customer_choice == comparison_movie_1['main_genre']:
             # 비교군 1 영화의 메인장르 변수에 담기
             comparison_movie_1_main_genre = comparison_movie_1['main_genre']
             #메인장르 배열을 돌리고,
@@ -76,7 +88,8 @@ def prefer_algorithm():
                 if comparison_movie_2_main_genre == all_second_genre[movie_genre]:
                     genre_score[movie_genre] = genre_score[movie_genre]+1
 
+    return genre_score
 
-         print(genre_score)
+print(genre_score)
 
 
