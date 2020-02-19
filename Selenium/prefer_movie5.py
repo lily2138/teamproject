@@ -78,6 +78,7 @@ for i in range(15):
             if second_score == key:
                 genre_score[key] = genre_score[key] + 1
 
+    # 고객 선택이 2번 영화면,
     elif customer_choice == comparison_movie_2 :
         for key in genre_score:
             main_score = comparison_movie_2_main_genre.split('\n')[1]
