@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fd17d1-48c8-4c10-8a2e-723009339640" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Selenium/prefer_movie5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/prefer_movie5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/prefer_movie3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/prefer_movie3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prefer_movie5">
+  <component name="RunManager" selected="Python.prefer_movie3">
     <configuration name="movie_crolling2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="teamproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,10 +152,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.prefer_movie3" />
         <item itemvalue="Python.prefer_movie5" />
         <item itemvalue="Python.prefer_movie4" />
         <item itemvalue="Python.movie_crolling2" />
-        <item itemvalue="Python.prefer_movie3" />
         <item itemvalue="Python.music_random" />
       </list>
     </recent_temporary>

@@ -12,7 +12,7 @@ all_long_movie = list(db.Long_movie_1.find())
 # all_main_genre 라는 변수에 main_genre DB값 담기(이것도 코드가 맞는지 모르겠오)
 #all_main_genre = db.Long_movie_1.values('main_genre')
 #all_main_genre = list(db.Long_movie_1.find({['main_genre']}))
-all_main_genre = list(db.Long_movie_1.values.find({'_id': 0, 'title' : 0, 'poster' : 0,
+all_main_genre = list(db.Long_movie_1.find({'_id': 0, 'title' : 0, 'poster' : 0,
                          'director' : 0,'actor' : 0,'summary' : 0,
                          'main_genre' : 1,'second_genre': 0}))
 
