@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fd17d1-48c8-4c10-8a2e-723009339640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Selenium/make_customerDB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/recommend_movie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/recommend_movie(customer).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium/prefer_movie5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/prefer_movie5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/make_customerDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/make_customerDB.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/recommend_movie.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Lily\Desktop\sparta\teamproject\Selenium\recommend_movie(customer).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

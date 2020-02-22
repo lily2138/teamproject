@@ -75,10 +75,10 @@ def movie_select():
                 #print(main_score)
                 #print(second_score)
                 if selected_main_genre  == key:
-                    genre_score[key] = genre_score[key] + 2
+                    genre_score[key] = genre_score[key] + 5
 
                 if selected_second_genre == key:
-                    genre_score[key] = genre_score[key] + 1
+                    genre_score[key] = genre_score[key] + 3
 
         # 고객 선택이 2번 영화면,
         elif customer_choice == comparison_movie_2 :
@@ -89,10 +89,10 @@ def movie_select():
                 # print(main_score)
                 # print(second_score)
                 if selected_main_genre == key:
-                    genre_score[key] = genre_score[key] + 2
+                    genre_score[key] = genre_score[key] + 5
 
                 if selected_second_genre == key:
-                    genre_score[key] = genre_score[key] + 1
+                    genre_score[key] = genre_score[key] + 3
 
         #print(genre_score)
 
