@@ -100,3 +100,18 @@ print(result)
 print("첫번째 선호하는 장르는", result[0])
 print("두번째 선호하는 장르는", result[1])
 
+
+#고객 등록하기 (임의로)
+customer_name = "스파르타"
+customer_Id = "sparta"
+customer_genre1 = result[0][0]
+customer_genre2 = result[1][0]
+
+customer_info = {
+                'name': customer_name,
+                'Id': customer_Id,
+                'main_genre': customer_genre1,
+                'second_genre': customer_genre2,
+            }
+
+db.Customer.insert_one(customer_info)
