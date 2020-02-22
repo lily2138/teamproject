@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fd17d1-48c8-4c10-8a2e-723009339640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Selenium/recommend_movie(customer).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium/make_customerDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/make_customerDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/recommend_movie(customer).py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/recommend_movie(customer).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/recommend_movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/recommend_movie.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.recommend_movie">
+  <component name="RunManager" selected="Python.recommend_movie (1)">
     <configuration name="make_customerDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="teamproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,27 +58,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/make_customerDB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="prefer_movie3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="teamproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/prefer_movie3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,6 +108,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="recommend_movie (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="teamproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/recommend_movie.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="recommend_movie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="teamproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recommend_movie (1)" />
         <item itemvalue="Python.recommend_movie" />
         <item itemvalue="Python.make_customerDB" />
         <item itemvalue="Python.prefer_movie5" />
         <item itemvalue="Python.prefer_movie6" />
-        <item itemvalue="Python.prefer_movie3" />
       </list>
     </recent_temporary>
   </component>

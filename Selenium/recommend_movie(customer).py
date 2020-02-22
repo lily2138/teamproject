@@ -4,7 +4,7 @@ import random
 client = MongoClient('localhost', 27017)
 db = client.Short_Movie_Platform
 
-# all_short_movie 라는 변수에 DB값 담기
+# all_short_movie 라는 변수에 DB값 담기(지금 단편영화 db가 없어서 장편영화 db로 함)
 all_long_movie = list(db.Long_movie_1.find({}))
 # all_customer 라는 변수에 DB값 담기
 all_customer = list(db.Customer.find())
