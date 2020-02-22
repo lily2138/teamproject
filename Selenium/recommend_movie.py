@@ -12,6 +12,9 @@ all_long_movie = list(db.Long_movie_1.find({}))
 customer_genre1 = '드라마'
 customer_genre2 = '판타지'
 
+#사용자 선호장르 단편영화 임시 리스트
+temp_main_genre_movie = []
+temp_second_genre_movie = []
 
 for k in range(len(all_long_movie)):
         #단편영화 장르 값 입시로 저장해두기
