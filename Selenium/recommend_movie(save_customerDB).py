@@ -8,6 +8,9 @@ db = client.ART_Movie_Platform
 all_short_movie = list(db.ART_movie_list.find({}))
 #print(all_short_movie)
 
+# 고객정보 임의 설정
+customer_name = "스파르타1"
+customer_Id = "sparta1"
 
 #고객선택 장르 임의 설정
 customer_genre1 = '스릴러'
@@ -34,6 +37,28 @@ for k in range(len(all_short_movie)):
             temp_second_genre_movie.append(all_short_movie[k])
         else:
             continue
+
+
+#고객데이터
+customer_info = {
+    'name': customer_name,
+    'Id': customer_Id,
+    'main_genre': customer_genre1,
+    'second_genre': customer_genre2,
+}
+#Customer 이라는 db에 고객정보들 저장
+db.Customer.insert_one(customer_info)
+
+
+
+
+
+
+
+
+
+
+
 
 
 #고객이 선호하는 장르 영화 리스트

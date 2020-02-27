@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fd17d1-48c8-4c10-8a2e-723009339640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Selenium/short_movie_crolling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium/movie_crolling2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/movie_crolling2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Selenium/recommend_movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/recommend_movie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/study.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/study.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/short_movie_crolling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/short_movie_crolling.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,10 +28,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Selenium" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ART_Cinema" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lily\Desktop\sparta\teamproject" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lily\Desktop\sparta\teamproject\Selenium" />
     </key>
@@ -49,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prefer_movie5">
+  <component name="RunManager" selected="Python.short_movie_crolling">
     <configuration name="movie_crolling2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="teamproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,9 +159,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.short_movie_crolling" />
         <item itemvalue="Python.prefer_movie5" />
         <item itemvalue="Python.movie_crolling2" />
-        <item itemvalue="Python.short_movie_crolling" />
         <item itemvalue="Python.recommend_movie(customer)" />
         <item itemvalue="Python.movie_recommend_flask" />
       </list>
