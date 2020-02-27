@@ -50,17 +50,6 @@ customer_info = {
 db.Customer.insert_one(customer_info)
 
 
-
-
-
-
-
-
-
-
-
-
-
 #고객이 선호하는 장르 영화 리스트
 print(temp_main_genre_movie)
 print(temp_second_genre_movie)
