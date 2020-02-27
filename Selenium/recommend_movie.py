@@ -5,28 +5,28 @@ client = MongoClient('localhost', 27017)
 db = client.Art_Movie_Platform
 
 # all_short_movie 라는 변수에 DB값 담기(지금 단편영화 db가 없어서 장편영화 db로 함)
-all_long_movie = list(db.Long_movie_1.find({}))
+all_short_movie = list(db.Art_movie_list.find({}))
 # all_customer 라는 변수에 DB값 담기
 
 #고객선택 장르 임의 설정
-customer_genre1 = '드라마'
-customer_genre2 = '판타지'
+customer_genre1 = '공포'
+customer_genre2 = '멜로/애정/로맨스'
 
 #사용자 선호장르 단편영화 임시 리스트
 temp_main_genre_movie = []
 temp_second_genre_movie = []
 
-for k in range(len(all_long_movie)):
+for k in range(len(all_short_movie)):
         #단편영화 장르 값 입시로 저장해두기
-        temp_genre = all_long_movie[k].get('main_genre').split('\n')[1]
+        temp_genre = all_short_movie[k].get('main_genre').split('\n')[1]
         # print(all_long_movie[k].get('main_genre').split('\n')[1])
         #만약에 고객 메인 장르와 단편영화의 임시장르가 같으면,
         if customer_genre1 == temp_genre :
             #그 영화들을 하나의 리스트로 모아둔다.
-            temp_main_genre_movie.append(all_long_movie[k])
+            temp_main_genre_movie.append(all_short_movie[k])
         # 만약에 고객 서브 장르와 단편영화의 임시장르가 같으면,
         if customer_genre2 == temp_genre:
-            temp_second_genre_movie.append(all_long_movie[k])
+            temp_second_genre_movie.append(all_short_movie[k])
         else:
             continue
 

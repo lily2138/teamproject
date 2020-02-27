@@ -3,35 +3,35 @@
     <title>helloworld</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
     <script>
 
         listing()
 
         genre_score = {
-        '드라마': 0,
-        '판타지': 0,
-        '공포': 0,
-        '멜로/애정/로맨스': 0,
-        '모험': 0,
-        '스릴러': 0,
-        '느와르': 0,
-        '다큐멘터리': 0,
-        '코미디': 0,
-        '가족': 0,
-        '미스터리': 0,
-        '전쟁': 0,
-        '에니메이션': 0,
-        '범죄': 0,
-        '뮤지컬': 0,
-        'SF': 0,
-        '액션': 0
-         }
+            '드라마': 0,
+            '판타지': 0,
+            '공포': 0,
+            '멜로/애정/로맨스': 0,
+            '모험': 0,
+            '스릴러': 0,
+            '느와르': 0,
+            '다큐멘터리': 0,
+            '코미디': 0,
+            '가족': 0,
+            '미스터리': 0,
+            '전쟁': 0,
+            '에니메이션': 0,
+            '범죄': 0,
+            '뮤지컬': 0,
+            'SF': 0,
+            '액션': 0
+        }
 
         <!-- Q1.화면에 영화 두개씩출력해줘야함. 그리고 뭔가 점수 넣는 알고리즘도 틀린거같음-->
         function fight(all_poster,all_main_genre,all_second_genre){
@@ -48,15 +48,13 @@
 
                 <!--Q2.두번째 장르가 없을 경우 고려해야함 -->
                 $('#checked_1').click(function(){
-                 count1(main_genre_1,second_genre_1);
-                });
+                   count1(main_genre_1,second_genre_1);
+               });
                 $('#checked_2').click(function(){
-                 count2(main_genre_2,second_genre_2);
-                });
+                   count2(main_genre_2,second_genre_2);
+               });
             }
         }
-        <!-- Q3. score 계산이 완료되면 , 그 결과를 유저db에 선호하는 main장르, second 장르에 넣어줘야함       -->
-        <!--  userdb는 언니가 만들었었는데 거기에 선호장르값부분만 지워놓고 이 값들을 채워가야함      -->
 
         function count1(main_genre_1,second_genre_1){
             genre_score[main_genre_1] += 5
@@ -66,6 +64,9 @@
             genre_score[main_genre_2] += 5
             genre_score[second_genre_2] += 3
         }
+
+        <!--Q3. 제일 높은 선호장르와 두번째 장르 변수로 저장 -->
+
 
         function listing(){
             $.ajax({
@@ -105,19 +106,19 @@
             })
         }
 
-<!--        function make_table_list(title, poster, director, actor) {-->
-<!--         let temp_html = title +  director-->
-<!--         $('#z').append(temp_html)-->
-<!--      }-->
+        <!--        function make_table_list(title, poster, director, actor) {-->
+            <!--         let temp_html = title +  director-->
+            <!--         $('#z').append(temp_html)-->
+            <!--      }-->
 
-    </script>
-</head>
-<body>
+        </script>
+    </head>
+    <body>
 
-    <div id = "z">
-<!--        <img src="fight_1" id=checked_1 onclick=count1()> <strong>VS</strong>-->
-<!--        <img src="" id=checked_2 onclick=count2()>-->
-    </div>
+        <div id = "z">
+            <!--        <img src="fight_1" id=checked_1 onclick=count1()> <strong>VS</strong>-->
+            <!--        <img src="" id=checked_2 onclick=count2()>-->
+        </div>
 
-</body>
-</html>
+    </body>
+    </html>
