@@ -3,10 +3,10 @@ from pymongo import MongoClient
 import random
 
 client = MongoClient('localhost', 27017)
-db = client.Art_Movie_Platform
+db = client.ART_Movie_Platform
 
 # all_long_movie 라는 변수에 DB값 담기
-all_long_movie = list(db.Long_movie_1.find({}))
+all_long_movie = list(db.Long_movie_list.find({}))
 
 # result = list(db.Long_movie_1.find({status : "title"}))
 # print(result)
